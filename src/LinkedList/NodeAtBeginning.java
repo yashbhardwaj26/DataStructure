@@ -56,6 +56,26 @@ public class NodeAtBeginning {
 		}
 	}
 	
+	public void insertNodeAtIndex(int index, int value) {
+		
+		Node newNode = new Node (value);
+		Node current = head;
+		int count =1;
+		while (current != null && count != index-1) {
+			
+			
+			
+			current = current.nextNode;
+			
+			count++;
+			
+			
+		}
+	Node temp = current.nextNode;	
+    current.nextNode = newNode;
+	newNode.nextNode = temp;
+		
+	}
 	
 	public static void main(String[] args) {
 		
@@ -72,6 +92,8 @@ public class NodeAtBeginning {
 		n.insertNode(4);
 		
 		n.inserNodeAtBeginning(5);
+		
+		n.insertNodeAtIndex(4, 20);
 		
 		n.printLinkedList(n.head);
 		
