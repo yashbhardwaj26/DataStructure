@@ -11,6 +11,10 @@ public class Main {
 		intArray.insertInarray(1, 10);
 		intArray.insertInarray(6,60);
 		// TODO Auto-generated method stub
+		
+		// traverse an array 
+		
+		intArray.traversearray();
 
 	}
 

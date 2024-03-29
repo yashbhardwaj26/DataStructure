@@ -37,4 +37,12 @@ public class InsertionInArray {
 
 	}
 
+	public void traversearray() {
+
+		for (int i = 0; i < intArr.length; i++) {
+
+			System.out.print(intArr[i]+ " ");
+		}
+	}
+
 }
