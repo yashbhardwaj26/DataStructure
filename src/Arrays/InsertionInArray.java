@@ -61,5 +61,23 @@ public class InsertionInArray {
 
 		System.out.println("Value not present in array");
 	}
+	
+	
+	// Delete an element from an array 
+	
+	
+	public void deleteElement(int indexToBeDeleted) {
+		
+		try {
+			
+			intArr[indexToBeDeleted]= Integer.MIN_VALUE;
+			
+			System.out.println("Value deleted successfully");
+		}
+		catch (ArrayIndexOutOfBoundsException e) {
+			
+			System.out.println("The value is not present in array");
+		}
+	}
 
 }
