@@ -14,7 +14,9 @@ public class Main {
 		
 		// traverse an array 
 		
-		intArray.traversearray();
+		//intArray.traversearray();
+		
+		intArray.searchAnElement(20);
 
 	}
 

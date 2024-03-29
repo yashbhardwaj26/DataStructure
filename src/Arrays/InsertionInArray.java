@@ -41,8 +41,25 @@ public class InsertionInArray {
 
 		for (int i = 0; i < intArr.length; i++) {
 
-			System.out.print(intArr[i]+ " ");
+			System.out.print(intArr[i] + " ");
 		}
+	}
+
+	// Search an element in an Array
+
+	public void searchAnElement(int value) {
+
+		for (int i = 0; i < intArr.length; i++) {
+
+			if (intArr[i] == value) {
+
+				System.out.println("Value fouund at index " + i);
+
+				return;
+			}
+		}
+
+		System.out.println("Value not present in array");
 	}
 
 }
