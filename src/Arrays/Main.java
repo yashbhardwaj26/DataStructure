@@ -16,6 +16,8 @@ public class Main {
 		array2.accessElement(0, 1);
 		array2.traverseElements();
 		array2.searchElement(30);
+		
+		array2.deleteElements(0, 1);
 		//System.out.println(Arrays.deepToString(array2.arr));
 		
 		//intArray.insertInarray(1, 10);

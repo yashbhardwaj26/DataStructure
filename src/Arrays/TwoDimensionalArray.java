@@ -75,14 +75,24 @@ public class TwoDimensionalArray {
 				if (arr[i][j] == value) {
 					System.out.println(" the value is present at " + i + "row and " + j + "column");
 					return;
-				} 
+				}
 
 			}
 		}
-		
-		System.out.println("the value is not found in arrya");
-		
 
+		System.out.println("the value is not found in arrya");
+
+	}
+
+	public void deleteElements(int row, int column) {
+
+		try {
+
+			System.out.println("Value deleted successfully " + arr[row][column]);
+			arr[row][column] = Integer.MIN_VALUE;
+		} catch (ArrayIndexOutOfBoundsException e) {
+			System.out.println(" the given index is not found ");
+		}
 	}
 
 }
