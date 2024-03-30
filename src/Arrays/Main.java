@@ -12,7 +12,9 @@ public class Main {
 		
 		array2.insertInArray(0, 0, 10);
 		array2.insertInArray(1, 1, 30);
-		System.out.println(Arrays.deepToString(array2.arr));
+		array2.insertInArray(0, 1, 20);
+		array2.accessElement(0, 1);
+		//System.out.println(Arrays.deepToString(array2.arr));
 		
 		//intArray.insertInarray(1, 10);
 		//intArray.insertInarray(2, 20);
