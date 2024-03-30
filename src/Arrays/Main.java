@@ -14,6 +14,7 @@ public class Main {
 		array2.insertInArray(1, 1, 30);
 		array2.insertInArray(0, 1, 20);
 		array2.accessElement(0, 1);
+		array2.traverseElements();
 		//System.out.println(Arrays.deepToString(array2.arr));
 		
 		//intArray.insertInarray(1, 10);
