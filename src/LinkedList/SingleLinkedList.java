@@ -78,6 +78,28 @@ public class SingleLinkedList {
 			}
 			tempnode= tempnode.next;
 		}
+		System.out.println("");
+		
+	}
+	
+	public boolean findElement(int value) {
+		
+		if(head == null) {
+			return false;
+		}
+		Node tempnode = head;
+		for (int i=0;i< size;i++) {
+			
+			if (tempnode.value == value) {
+				System.out.println("The value is found at index -> " + i);
+				return true;
+				
+			}
+			tempnode = tempnode.next;
+		}
+		
+		System.out.println(" the value is not present in linked list");
+		return false;
 		
 	}
 

@@ -16,6 +16,7 @@ public class Main {
 		// TODO Auto-generated method stub
 
 		sl1.traverseLinkedList();
+		sl1.findElement(5);
 	}
 
 }
