@@ -62,5 +62,23 @@ public class SingleLinkedList {
 		
 		size ++;
 	}
+	
+	
+	public void traverseLinkedList() {
+		
+		if (head==null) {
+			System.out.println("the list is empty");
+		}
+		Node tempnode = head;
+		for (int i =0;i< size;i++) {
+			
+			System.out.print(tempnode.value);
+			if(i!=size-1) {
+				System.out.print("-->");
+			}
+			tempnode= tempnode.next;
+		}
+		
+	}
 
 }
