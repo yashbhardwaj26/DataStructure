@@ -141,5 +141,12 @@ public class SingleLinkedList {
 			size --;
 		}
 	}
+	
+	public void deletEntirelist() {
+		
+		head = null;
+		tail= null;
+		System.out.println("List deleted successfully");
+	}
 
 }
