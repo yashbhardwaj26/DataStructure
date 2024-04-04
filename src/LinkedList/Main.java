@@ -17,6 +17,8 @@ public class Main {
 
 		sl1.traverseLinkedList();
 		sl1.findElement(5);
+		sl1.deletionOfNode(4);
+		sl1.traverseLinkedList();
 	}
 
 }
