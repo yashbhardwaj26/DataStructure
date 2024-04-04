@@ -40,5 +40,29 @@ public class Exercise1 {
 		}
 	}
 	
+	public Node popNode() {
+		if (head == null) {
+		      System.out.println("The SLL does not exist");
+		      return null;
+		    } 
+		    Node removeNode;
+		    Node currentNode;
+		    if (head == tail) {
+		      removeNode = head;
+		      head = tail = null;
+		    } else {
+		      currentNode = head;
+		      while (currentNode.next != tail) {
+		        currentNode = currentNode.next;
+		      }
+		      removeNode = currentNode.next;
+		      currentNode.next = null;
+		      tail = currentNode;
+		    }
+		    size--;
+		 
+		    return removeNode;
+	}
+	
 
 }
