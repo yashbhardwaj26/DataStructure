@@ -8,8 +8,12 @@ public class Main {
 		
 		CircularSingleLinkedList cl = new CircularSingleLinkedList();
 		cl.createCircularSingleLinkedList(5);
+		
+		
+		cl.insertNodeInCSLL(7, 0);
 		System.out.println(cl.head.value);
 		System.out.println(cl.head.next.value);
+		System.out.println(cl.head.next.next.value);
 	}
 
 }

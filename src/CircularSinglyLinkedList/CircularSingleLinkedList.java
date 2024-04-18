@@ -18,5 +18,42 @@ public class CircularSingleLinkedList {
 		return head;
 	}
 	
+	
+	public void insertNodeInCSLL(int value , int location) {
+		
+		Node node = new Node();
+		node.value=value;
+		if (head==null) {
+			
+			createCircularSingleLinkedList(value);
+			
+		}
+		else if (location==0) {
+			node.next=head;
+			head=node;
+			tail.next=head;
+		}
+		
+		else if (location>= size) {
+			tail.next = node;
+			tail=node;
+			tail.next=head;
+		}
+		
+		else {
+			Node tempnode = head;
+			int index = 0 ; 
+			while (index< location-1) {
+				
+				tempnode= tempnode.next;
+				index++;
+			}
+			
+			node.next = tempnode.next;
+			tempnode.next= node;
+		}
+		
+		size++;
+	}
 
 }
