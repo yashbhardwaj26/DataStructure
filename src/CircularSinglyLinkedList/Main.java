@@ -11,9 +11,9 @@ public class Main {
 		
 		
 		cl.insertNodeInCSLL(7, 0);
-		System.out.println(cl.head.value);
-		System.out.println(cl.head.next.value);
-		System.out.println(cl.head.next.next.value);
+		cl.insertNodeInCSLL(2, 4);
+		cl.traverseCSLL();
+
 	}
 
 }
