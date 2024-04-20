@@ -13,6 +13,7 @@ public class Main {
 		cl.insertNodeInCSLL(7, 0);
 		cl.insertNodeInCSLL(2, 4);
 		cl.traverseCSLL();
+		cl.searchValueInCSLL(2);
 
 	}
 
