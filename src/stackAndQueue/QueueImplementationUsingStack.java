@@ -7,31 +7,45 @@ import java.util.Stack;
 public class QueueImplementationUsingStack {
 	
   public static void main (String [] args) {
-	  Stack s = new Stack();
-	 s.push(1);
-	 s.push(2);
-	 s.push(3);
-	  for (int i =0 ; i <s.size();i++) {
-		  
-		  System.out.println(s.elementAt(i));
-	  }
+	  Queue1 stack = new Queue1();
 	  
+	  stack.push(1);
+	  stack.push(2);
+	  System.out.println(stack.top());
+	  
+	  
+	
+	
 
   }
-
-private static void push(int x) {
+}
+  
+  
+class Queue1{
+	
 	Queue q = new LinkedList();
+
+public void push(int x) {
+	
 	  q.add(x);
 	  
 	  int size = q.size();
+	  
 	  for (int i = 1; i <= q.size();i++ ) {
 		  
 		 q.add(q.remove());
 	  }
 }
+
+public int top() {
 	
-   
-	
+	return (int) q.peek();
 	
 
 }
+	
+}   
+	
+	
+
+
