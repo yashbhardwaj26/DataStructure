@@ -11,6 +11,7 @@ public class QueueImplementationUsingStack {
 	  
 	  stack.push(1);
 	  stack.push(2);
+	  stack.push(3);
 	  System.out.println(stack.top());
 	  
 	  
@@ -23,26 +24,29 @@ public class QueueImplementationUsingStack {
   
 class Queue1{
 	
-	Queue q = new LinkedList();
+	Queue<Integer> q1 = new LinkedList<Integer>();
 
-public void push(int x) {
-	
-	  q.add(x);
-	  
-	  int size = q.size();
-	  
-	  for (int i = 1; i <= q.size();i++ ) {
-		  
-		 q.add(q.remove());
-	  }
-}
+	void push(int x)
+    {
+        //  Get previous size of queue
+        int s = q1.size();
 
-public int top() {
-	
-	return (int) q.peek();
-	
+        // Push the current element
+        q1.add(x);
 
-}
+        // Pop all the previous elements and put them after
+        // current element
+        for (int i = 0; i < s; i++) {
+            q1.add(q1.remove());
+        }
+    }
+
+	 int top()
+	    {
+	        if (q1.isEmpty())
+	            return -1;
+	        return q1.peek();
+	    }
 	
 }   
 	
