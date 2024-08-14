@@ -47,6 +47,14 @@ class Queue1{
 	            return -1;
 	        return q1.peek();
 	    }
+	 
+	 void pop()
+	    {
+	        // if no elements are there in q1
+	        if (q1.isEmpty())
+	            return;
+	        q1.remove();
+	    }
 	
 }   
 	
