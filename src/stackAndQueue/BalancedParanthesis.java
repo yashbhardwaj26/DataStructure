@@ -85,7 +85,7 @@ public class BalancedParanthesis {
         }
 
         // Check Empty Stack
-        return (stack.isEmpty());
+        return (stack.isEmpty())
     }
 
     // Driver code
